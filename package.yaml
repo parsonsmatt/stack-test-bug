@@ -1,0 +1,15 @@
+name: stack-test-bug
+
+library:
+  source-dirs: src
+  dependencies:
+    - base >=4.8 && <5.0
+
+tests:
+  test:
+    main: Test.hs
+    source-dirs: test
+    dependencies:
+      - base
+      - stack-test-bug
+      - containers
